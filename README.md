@@ -1,2 +1,7 @@
-# dockerfile-php-fpm72
-Dockerfile php72
+# Simple container for php-fpm 7.2
+
+## To run:
+
+```
+docker run -tid --net REPLACE_YOUR_NETWORK_NAME --ip REPLACE_YOUR_NETWORK_IP_ADDRESS -e REMOTE_HOST REPLACE_REMOTE_HOST -e NGINX_HOST REPLACE_NGINX_HOST -p REPLACE_YOUR_PORT:9000 --expose=80 -v /REPLACE/YOUR/DIRECTORY:/var/www/sites --name REPLACE_CONTAINER_NAME
+```
